@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct ButtonXLView: View {
+    let title: String
+    let action: () -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: action, label: {
+            ZStack {
+                RoundedRectangle(cornerRadius: 6)
+                    .foregroundStyle(.primary)
+                Text(title)
+                    .foregroundStyle(.white)
+            }
+        })
     }
 }
 
 #Preview {
-    ButtonXLView()
+    ButtonXLView(title: "örnek", action: { })
 }
