@@ -89,4 +89,15 @@ fastlane/test_output
 
 iOSInjectionProject/
 firebase.json
-firebase-debug.log
+firebase-debug.log 
+
+firebase
+
+firebase/
+
+firebase/*
+
+/firebase/firebase_config.js
+
+/src/firebase/*
+GoogleService-Info
